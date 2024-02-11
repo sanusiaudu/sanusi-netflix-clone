@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            height: 150vh;
+            background: url(./img/landing\ page\ bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0; 
+            font-family: Martel Sans, sans-serif;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+        form{
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            height: 100vh;
+            padding: 2rem;
+        }
+        input{
+            width: 100%;
+            line-height: 1.5;
+            padding-top: 0.5rem;    
+            padding-bottom: 0.5rem;
+            padding-left: 0;
+            padding-right: 0;
+            margin-top: 0.25rem;
+            border: none;
+            border-radius: 0.25rem;
+            color: #ffffff;        
+        }
+        a{
+            text-decoration: none;
+            color: #414141;
+        }
+        footer{
+            height: 30vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center
+        }
+        ul{
+            display: inline-flex; 
+            list-style-type: disc; 
+            list-style-position: outside; 
+            height: inherit;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            padding-bottom: 1rem;
+        }
+        li{
+            display: inline-flex;
+            width: 12rem;
+            margin-top: 0.75rem;
+            margin-left: 0.5rem
+        }
+        #language{
+            background: url(./img/icon-park-outline_earth.svg);
+            background-repeat: no-repeat;
+            padding-left: 1rem;
+            display: flex;
+            align-items: center;
+            background-position: 0% 50%;
+            margin-right: 1rem;
+            border-radius: 0.25rem;
+            width: 6rem;
+            height: 2rem;
+        }
+    </style>
+</head>
+<body> 
+    <header>
+        <div>
+            <img src="./img/netflixLogo.svg" alt="" style="width: 10rem; height: 2rem;">
+        </div>
+    </header>
+    <div style="display: flex; justify-content: center; height: 110vh;">
+        <form>
+            <h1 style="color: #ffffff;">Sign in</h1>
+            <div style="display: flex; flex-direction: column; width: 100%;">
+                <input type="email" placeholder="Email or phone number">
+                <input type="password" placeholder="Password">
+            </div>
+            <div style="width: 100%; margin-top: 2rem;">
+                <input type="submit" value="Sign in" style="background-color: #E50914;;">
+                <div style="color: #414141; display: flex; justify-content: space-between; margin-top: 1rem; margin-bottom: 2rem;">
+                    <span style="padding-left: 0.5rem;">Remember me</span>
+                    <span>Need help?</span>
+                </div>
+            </div>
+            <div style="color: #414141;">
+                <p style="color: #414141; line-height: 1.5;">
+                    <img src="./img/facebook logo.svg" alt=""> <span>Login with facebook</span>
+                </p>
+                <p>
+                    <span>New to Netflix?</span>
+                    <span style="color: #ffffff;">Sign up now.</span></p>
+                <p>
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div>
+            <a href="#">
+                <p style="margin: 0; padding-bottom: 1rem;">Questions? Call 1-844-505-2993</p>
+            </a>
+        </div>
+            <div style="">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="language-selector" style="padding-bottom: 1rem;">
+                <select id="language" name="language" style="color: #414141;">
+                    <option value="">English</option>
+                    <option value="1">French</option>
+                    <option value="2">Spanish</option>
+                    <option value="3">Italian</option>
+                    <option value="4">Arabic</option>
+                </select>
+            </div>
+        </footer>
+</body>
+</html>
